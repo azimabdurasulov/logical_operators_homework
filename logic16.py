@@ -6,6 +6,6 @@ def main(a):
     Returns:
         bool: answer
     """
-    return a % 1 == 0 and a // 10000 > 0
+    return a % 1 == 0 and 2 > a // 10000 > 0
 
 print(main(34568))
