@@ -11,6 +11,7 @@ def main(x):
     Returns:
         bool: answer
     """
+    a = x
     x1 = x % 10
     x //= 10
 
@@ -19,6 +20,6 @@ def main(x):
 
     x3 = x % 10
     x //= 10
-    return x3 * 100 + x2 * 10 + x1 == x1 * 100 + x2 * 10 + x3
+    return x3 * 100 + x2 * 10 + x1 == x1 * 100 + x2 * 10 + x3 or (x1 == x2 and x3 == 0)
 
-print(main(454))
+print(main(44))
