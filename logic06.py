@@ -7,8 +7,6 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    a = a % 2 == 0
-    b = b % 2 == 0
-    return a or b
+    return a > 0 or b > 0
 
-print(main(65, 98))
+print(main(-65, 98))
